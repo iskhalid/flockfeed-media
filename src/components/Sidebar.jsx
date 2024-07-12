@@ -32,7 +32,7 @@ const Sidebar = () => {
   }
 
   return (
-    <div className={`fixed ${darkMode ? 'dark-mode' : 'light-mode'} flex mt-4 flex-col top-14 left-0  border border-gray-600 w-14 hover:w-64 md:hover:w-80 md:w-80 bg-white h-full text-gray-600 transition-all duration-300 border-none z-10 sidebar`}>
+    <div className={`fixed ${darkMode ? 'dark-mode' : 'light-mode'} flex mt-8 flex-col top-14 left-0  border border-gray-600 w-14 hover:w-64 md:hover:w-80 md:w-80 bg-white h-full text-gray-600 transition-all duration-300 border-none z-10 sidebar`}>
     <div className="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
       <ul className="flex flex-col py-4  space-y-1">
         <li>

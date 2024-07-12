@@ -43,7 +43,7 @@ const Login = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await fetch("http://localhost:4000/register", {
+      const response = await fetch("https://flockfeed-media.onrender.com/register", {
         method: "POST",
         body: JSON.stringify({
           fullname: fullName.current.value,
@@ -68,7 +68,7 @@ const Login = () => {
   };
   const handleSignin = async () => {
     try {
-      const response = await fetch("http://localhost:4000/login", {
+      const response = await fetch("https://flockfeed-media.onrender.com/login", {
         method: "POST",
         body: JSON.stringify({
           username: username.current.value,

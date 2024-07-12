@@ -22,7 +22,7 @@ const ProfileContainer = () => {
     
     const fetchPosts = async () => {
       try {
-        const posts = await fetch('http://localhost:4000/posts/'+id, {
+        const posts = await fetch('https://flockfeed-media.onrender.com/posts/'+id, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const ProfileContainer = () => {
 
   const fetchProfile = async () => {
     try {
-      const response = await fetch('http://localhost:4000/user/'+id, {
+      const response = await fetch('https://flockfeed-media.onrender.com/user/'+id, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

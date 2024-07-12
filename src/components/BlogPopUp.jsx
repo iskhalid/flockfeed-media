@@ -45,7 +45,7 @@ const BlogPopUp = ({ closePopUp }) => {
     }
     data.set("author", user.data._id);
     ev.preventDefault();
-    const response = await fetch('http://localhost:4000/blogs', {
+    const response = await fetch('https://flockfeed-media.onrender.com/blogs', {
       method: "POST",
       body: data,
       credentials: "include",

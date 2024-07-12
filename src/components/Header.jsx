@@ -80,7 +80,7 @@ const Header = () => {
             <NavLink exact to="/login" activeclassNameName="active">
               {user ? (
                 <button
-                  className="-mt-2 hover:bg-blue-900 bg-blue-700 w-20 px-2 py-2 text-white rounded-md"
+                  className="-mt-2 hover:bg-blue-900 bg-blue-700 w-20 sm:w-24 px-2 py-2 text-white rounded-md"
                   onClick={handleLogout}
                 >
                   Log out

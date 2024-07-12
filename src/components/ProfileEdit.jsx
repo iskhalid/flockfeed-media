@@ -59,7 +59,7 @@ setProfilePicture(URL.createObjectURL(ev.target.files[0]));
     formData.set("userId", data._id);
 
     try {
-      const response = await fetch('http://localhost:4000/edit-profile', {
+      const response = await fetch('https://flockfeed-media.onrender.com/edit-profile', {
         method: "PATCH",
         body: formData,
         credentials: "include",

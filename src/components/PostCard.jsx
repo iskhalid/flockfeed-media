@@ -20,6 +20,8 @@ const PostCard = ({ d ,fetchPosts}) => {
   const shortStringDate = createdAt.slice(0,10);
   const darkMode = useSelector(selectDarkMode);
   const[isMyProfile,setisMyProfile] = useState(false);
+  const [isSuperAdmin,setisSuperAdmin] = useState(false);
+  const superAdminId = "668e3cf934372ced0f6d6283"
 
   const user = useSelector((store) => store.user.user);
 
@@ -48,7 +50,7 @@ const PostCard = ({ d ,fetchPosts}) => {
     console.log("inside news handel delete");
     try {
       const response = await fetch(
-        `http://localhost:4000/blog/${id}`,
+        `https://flockfeed-media.onrender.com/blog/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -90,6 +92,10 @@ const PostCard = ({ d ,fetchPosts}) => {
     if(user.data._id === authorId){
       setisMyProfile(true)
     }
+
+    if(user.data._id === superAdminId){
+      setisSuperAdmin(true) 
+    }
     
   },[user, d])
 
@@ -125,6 +131,7 @@ const PostCard = ({ d ,fetchPosts}) => {
           </svg>
           {/* <div className="ml-3 px-32">post</div> */}
          { isMyProfile && <div onClick={()=>handleDelete(_id)} className=" ml-64 text-lg cursor-pointer"><AiOutlineDelete/></div>}
+         { isSuperAdmin && <div onClick={()=>handleDelete(_id)} className=" ml-64 text-lg cursor-pointer"><AiOutlineDelete/></div>}
 
         </div>
 
