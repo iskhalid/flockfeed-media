@@ -63,6 +63,7 @@ const Login = () => {
     } catch (error) {
       console.log(error);
       alert("Registration failed");
+      setLoading(false);
     }
   };
   const handleSignin = async () => {
@@ -90,6 +91,7 @@ const Login = () => {
     } catch (error) {
       console.log(error);
       alert("Login failed");
+      setLoading(false);
     }
   };
 
