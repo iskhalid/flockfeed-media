@@ -63,7 +63,7 @@ const Header = () => {
 
   return (
     <div className={` ${darkMode ? 'dark-mode' : 'light-mode'} dark:bg-gray-800 dark:text-white font-sans bg-gray-100  py-4 fixed top-0 left-0 right-0 w-full z-50 px-12 flex items-baseline justify-between shadow-lg border-b-2 mb-12 border-gray-100`}>
-      <Link to={"/"} className=" w-32 pr-7 mx-2 cursor-pointer px-2">
+      <Link to={"/"} className=" w-40  pr-7 mx-2 cursor-pointer px-2">
        <img src={websiteLogo} />
       </Link>
       <div className=" text-[17px] font-semibold">
@@ -80,13 +80,13 @@ const Header = () => {
             <NavLink exact to="/login" activeclassNameName="active">
               {user ? (
                 <button
-                  className="-mt-2 hover:bg-blue-900 bg-blue-700 px-2 py-2 text-white rounded-md"
+                  className="-mt-2 hover:bg-blue-900 bg-blue-700 w-20 px-2 py-2 text-white rounded-md"
                   onClick={handleLogout}
                 >
                   Log out
                 </button>
               ) : (
-                <button className=" -mt-2 hover:bg-blue-900 bg-blue-700 px-3 py-2 text-white rounded-md">
+                <button className=" -mt-2 hover:bg-blue-900 bg-blue-700 w-20  px-2 py-2 text-white rounded-md">
                   Log in
                 </button>
               )}
