@@ -71,11 +71,7 @@ const Header = () => {
         <li className=" hover:text-blue-800   duration-75 transition-all ease-out">
            <button className="" onClick={handleToggle}>{darkMode ? <MdDarkMode className="" />  : <MdOutlineLightMode className=" text-lg" />}</button>
           </li>
-          <li className=" hover:text-blue-800   duration-75 transition-all ease-out">
-            <NavLink exact to="/" activeclassNameName="active">
-              Blogs
-            </NavLink>
-          </li>
+         
           <li className=" hover:text-blue-800  duration-75 transition-all ease-out">
             <NavLink exact to="/login" activeclassNameName="active">
               {user ? (
