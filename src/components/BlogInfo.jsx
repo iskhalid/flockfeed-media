@@ -30,7 +30,7 @@ const BlogInfo = () => {
 
     console.log("inside news handel delete")
     try {
-        const response = await fetch(`http://localhost:4000/blog/${id}`, {
+        const response = await fetch(`https://flockfeed-media.onrender.com/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

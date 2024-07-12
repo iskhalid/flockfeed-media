@@ -9,7 +9,7 @@ export const useBlog = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/blogs');
+        const response = await fetch('https://flockfeed-media.onrender.com/blogs');
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
