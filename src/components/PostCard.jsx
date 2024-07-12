@@ -102,7 +102,7 @@ const PostCard = ({ d ,fetchPosts}) => {
   return (
     
    
-    <div  className={` dark:bg-black mr-32 sm:mr-24 flex ${darkMode ? 'dark-mode' : 'light-mode'} items-center justify-center`}>
+    <div  className={` dark:bg-black  mr-64 sm:mr-24 flex ${darkMode ? 'dark-mode' : 'light-mode'} items-center justify-center`}>
     <div className={`bg-white dark:bg-gray-800  text-black dark:border-gray-800 p-4 ${darkMode ? 'dark-mode' : 'light-mode'} rounded-xl border max-w-xl`}>
       <div className="flex justify-between">
         <div className="flex items-center">

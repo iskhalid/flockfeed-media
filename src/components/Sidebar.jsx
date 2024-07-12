@@ -32,8 +32,8 @@ const Sidebar = () => {
   }
 
   return (
-    <div className={`fixed ${darkMode ? 'dark-mode' : 'light-mode'} flex mt-8 flex-col top-14 left-0  border border-gray-600 w-14 hover:w-64 md:hover:w-80 md:w-80 bg-white h-full text-gray-600 transition-all duration-300 border-none z-10 sidebar`}>
-    <div className="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
+    <div className={`fixed ${darkMode ? 'dark-mode' : 'light-mode'} flex mt-4  flex-col top-14 left-0  border border-gray-600  w-14 hover:w-64 md:hover:w-80 md:w-40 lg:w-80 bg-white h-full text-gray-600 transition-all duration-300 border-none z-10 sidebar`}>
+    <div className="overflow-y-auto overflow-x-hidden    flex flex-col justify-between flex-grow">
       <ul className="flex flex-col py-4  space-y-1">
         <li>
           <Link to={"/"} className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-500 hover:text-gray-800  border-transparent">
@@ -58,7 +58,7 @@ const Sidebar = () => {
             {/* <!-- Icono Sign Out de Font Awesome --> */}
             <div className="flex ml-2 items-center">
           <img className="h-11 w-11 rounded-full" src={profileImageUrl} alt="Profijdjle"/>
-          <div>
+          <div className=' hidden md:block'>
           <div>{fullname}</div>
 
         <div className=' text-sm text-gray-500 block'>@{username}</div>

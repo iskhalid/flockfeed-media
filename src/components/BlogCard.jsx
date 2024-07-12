@@ -63,7 +63,7 @@ const BlogCard = ({ d }) => {
     
    
     <div  className={`bg-gray-50 ${darkMode ? "dark-mode" : "light-mode"}  dark:bg-black py-4   flex items-center justify-center`}>
-    <div  className={`bg-white ${darkMode ? 'dark-mode' : 'light-mode'} dark:hover:bg-red-600 ${darkMode ? ' hover:bg-black' : 'hover:bg-gray-100'}   transition-all duration-100 dark:bg-gray-800 border-gray-200 dark:border-gray-800 dark:text-gray-100 p-4 rounded-xl border min-w-72  max-w-72 sm:max-w-xl`}>
+    <div  className={` ml-8 ${darkMode ? 'dark-mode' : 'light-mode'} dark:hover:bg-red-600 ${darkMode ? ' hover:bg-black' : 'hover:bg-gray-100'}   transition-all duration-100 dark:bg-gray-800 border-gray-200 dark:border-gray-800 dark:text-gray-100 p-4 rounded-xl border min-w-72  max-w-72 sm:max-w-xl`}>
       <div className="flex  justify-between">
         <div className="flex   items-center">
           <Link className="border-2 border-black rounded-full hover:border-red-500" to={"/profile/"+author._id}  ><img  className="h-11  w-11 rounded-full" src={profileImageUrl} alt="Profile"/></Link>

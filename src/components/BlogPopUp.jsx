@@ -63,7 +63,7 @@ const BlogPopUp = ({ closePopUp }) => {
   return (
     <div className="fixed inset-0  flex items-center justify-center bg-black bg-opacity-25">
       
-      <form className={`p-4 relative border rounded-lg shadow-md bg-white w-1/2 mx-auto mt-10 ${darkMode ? 'dark-mode' : ''}`}>
+      <form className={`p-4 relative border rounded-lg shadow-md bg-white w-full sm:w-1/2 mx-auto mt-10 ${darkMode ? 'dark-mode' : ''}`}>
       <h2 className="text-xl mx-12 font-semibold mb-4">Create Post</h2>
         <textarea
           className={`w-full h-36 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 ${darkMode ? 'dark-mode' : ''}`}
