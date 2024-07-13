@@ -16,6 +16,7 @@ import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import LoadingSkeleton from "./Skeleton";
 import { selectDarkMode } from "../app/themeSlice";
+import CountdownTimer from "./CountdownTimer";
 
 const Blog = () => {
 
@@ -64,7 +65,8 @@ const Blog = () => {
 
  if(!blogData){
   return (
-    <div className=" flex  flex-wrap w-screen mt-16 items-center justify-center flex-col mx-auto">
+    <div className=" flex   flex-wrap w-screen mt-24 items-center justify-center flex-col mx-auto">
+    <CountdownTimer/>
     <LoadingSkeleton  />
     <LoadingSkeleton  />
     <LoadingSkeleton  />
