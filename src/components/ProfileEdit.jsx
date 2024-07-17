@@ -21,6 +21,8 @@ const ProfileEdit = () => {
   const [profilePicture, setProfilePicture] = useState(null);
   const [newProfilePicture, setNewProfilePicture] = useState(null); // For storing the file
 
+  console.log(data)
+
   const handleFileChange = (ev) => {
     console.log(ev.target.files[0])
     const file = ev.target.files[0];
@@ -88,7 +90,7 @@ setProfilePicture(URL.createObjectURL(ev.target.files[0]));
       <div className="flex flex-col items-center">
         <div className="mt-8">
           <img
-            src={profilePicture || data.profilePicture || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKSzhiQWKfmkIEgC4nK9ShYjiWz6-DJgxeNyMoBLLabBo1e5kzMq_TE9_rFzSJpPow264&usqp=CAU'} // Default profile picture URL
+            src={profilePicture || data.profileImageUrl || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKSzhiQWKfmkIEgC4nK9ShYjiWz6-DJgxeNyMoBLLabBo1e5kzMq_TE9_rFzSJpPow264&usqp=CAU'} // Default profile picture URL
             alt="Profile"
             className="w-48 h-48 rounded-full object-cover border"
           />

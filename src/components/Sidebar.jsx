@@ -57,7 +57,7 @@ const Sidebar = () => {
           <a href="#" className="relative flex flex-row mt-8 items-center h-11 hover:bg-gray-400 hover:text-black hover:rounded-2xl hover:bg-opacity-80 py-8 focus:outline-none  border-l-4 border-transparent">
             {/* <!-- Icono Sign Out de Font Awesome --> */}
             <div className="flex ml-2 items-center">
-          <img className="h-11 w-11 rounded-full" src={profileImageUrl} alt="Profijdjle"/>
+          <img className="h-11 w-11 object-cover rounded-full" src={profileImageUrl} alt="Profijdjle"/>
           <div className=' hidden md:block'>
           <div>{fullname}</div>
 
