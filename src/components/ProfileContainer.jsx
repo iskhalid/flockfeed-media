@@ -79,7 +79,7 @@ const ProfileContainer = () => {
        
        {posts.length>0 ? posts.map((post) => (
          <PostCard key={post._id} d={post} fetchPosts={fetchPosts} />
-       )): <div className=' text-xl mr-48 sm:mr-0  sm:text-3xl m-2 p-3 text-gray-500'>No Posts created yet.</div>}
+       )): <div className=' text-xl ml-16 sm:ml-32  sm:text-3xl m-2 p-3 text-gray-500'>No Posts created yet.</div>}
        </div>
       
         <Sidebar/>
