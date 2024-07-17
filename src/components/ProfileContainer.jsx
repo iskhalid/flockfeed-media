@@ -72,13 +72,13 @@ const ProfileContainer = () => {
 
 
   return (
-    <div className={`bg-gray-100 items-center ${darkMode ? 'dark-mode' : 'light-mode'} flex flex-wrap w-screen justify-center flex-col mx-auto -mt-3`}>
+    <div className={`bg-gray-100 p-6 items-center ${darkMode ? 'dark-mode' : 'light-mode'} flex flex-wrap w-screen justify-center flex-col mx-auto -mt-3`}>
        <Header/>
         <Profile user={profile} />
         <Sidebar/>
         {posts.length>0 ? posts.map((post) => (
           <PostCard key={post._id} d={post} fetchPosts={fetchPosts} />
-        )): <div className='text-3xl m-2 p-3 text-gray-500'>No Posts created yet.</div>}
+        )): <div className=' text-xl mr-48 sm:mr-0  sm:text-3xl m-2 p-3 text-gray-500'>No Posts created yet.</div>}
         <ToastContainer/>
     </div>
   )

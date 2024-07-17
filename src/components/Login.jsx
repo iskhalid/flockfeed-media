@@ -87,7 +87,8 @@ const Login = () => {
         console.log("why the going to about page");
         navigate("/");
       } else {
-        alert("wrong username or password");
+        setErrorMessage("wrong username or password");
+        setLoading(false);
       }
     } catch (error) {
       console.log(error);
@@ -166,7 +167,7 @@ const Login = () => {
                 />
               </div>
               <div className="flex items-center justify-between">
-                <p className=" py-3 text-red-600 text-sm font-semibold">
+                <p className=" py-3 text-red-600 text-sm ">
                   {errorMessage}
                 </p>
               </div>

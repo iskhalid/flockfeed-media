@@ -9,7 +9,7 @@ export const formValidate = (...all) => {
         if(!isPasswordValid) return "Password length must be atleast 8 and should contain one uppercase, lowercase, number and symbol."
 
     }
-    if(!isPasswordValid) return "Password is not valid"
+    if(!isPasswordValid) return "Password lenght must be atleast 8 and should contain one uppercase, lowercase, number and symbol."
 
     return null
 

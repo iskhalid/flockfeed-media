@@ -42,10 +42,10 @@ useEffect(() => {
 
   return (
 <div className="m-10 mr-80 mt-28 max-w-sm">
-  <div className={`rounded-lg ${darkMode ? 'dark-mode' : 'light-mode'} border ml-10 sm:ml-0 min-w-[300px] sm:min-w-[650px] bg-white px-4 pt-8 pb-10 shadow-lg`}>
-    <div className="relative mx-auto w-36 rounded-full">
+  <div className={`rounded-lg ${darkMode ? 'dark-mode' : 'light-mode'} border ml-8 sm:ml-0 min-w-[300px] sm:min-w-[650px] bg-white px-4 pt-8 pb-10 shadow-lg`}>
+    <div className="relative mx-auto  w-36 rounded-full">
       <span className="absolute right-0 m-3 h-3 w-3 rounded-full bg-green-500 ring-2 ring-green-300 ring-offset-2"></span>
-      <img className="mx-auto h-auto w-full rounded-full" src={profileImageUrl || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'} alt="Profile" />
+      <img className="mx-auto h-36  w-full rounded-full" src={profileImageUrl || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'} alt="Profile" />
     </div>
     <h1 className={`my-1 text-center text-xl font-bold leading-8 text-gray-900 ${darkMode ? 'dark-mode' : 'light-mode'}`}>{fullname}</h1>
     {/* <h3 className="font-lg text-semibold text-center leading-6 text-gray-600">Marketing Exec. at Denva Corp</h3> */}
