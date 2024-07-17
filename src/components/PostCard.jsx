@@ -105,7 +105,7 @@ const PostCard = ({ d ,fetchPosts}) => {
     
    
     <div  className={` dark:bg-black  mr-64 sm:mr-24 flex ${darkMode ? 'dark-mode' : 'light-mode'} items-center justify-center`}>
-    <div className={`bg-white dark:bg-gray-800  text-black dark:border-gray-800 p-4 ${darkMode ? 'dark-mode' : 'light-mode'} rounded-xl border min-w-80  max-w-80 sm:max-w-xl`}>
+    <div className={`bg-white dark:bg-gray-800  text-black dark:border-gray-800 p-4 ${darkMode ? 'dark-mode' : 'light-mode'} rounded-xl border min-w-72  max-w-72 sm:max-w-xl`}>
       <div className="flex justify-between">
         <div className="flex items-center">
           <img className="h-11 w-11 rounded-full" src={profileImageUrl || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png' } alt="Profile"/>
@@ -116,7 +116,7 @@ const PostCard = ({ d ,fetchPosts}) => {
         </div>
        
       </div>
-      <p className=" dark:text-white max-w-64 min-w-64  sm:min-w-[505px] block text-sm leading-snug mt-3">{cleanString}</p>
+      <p className=" dark:text-white max-w-64 min-w-56  sm:min-w-[505px] block text-sm leading-snug mt-3">{cleanString}</p>
      { imageUrl && <img className="mt-2 w-3/2 h-64 object-contain aspect-square rounded-2xl border border-gray-100 dark:border-gray-700" src={imageUrl} alt="Tweet"/>}
       <p className="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">{relativeTime}</p>
       <div className="border-gray-200 dark:border-gray-600 border border-b-0 my-1"></div>

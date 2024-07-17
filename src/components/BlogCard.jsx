@@ -64,11 +64,11 @@ const BlogCard = ({ d }) => {
   return (
     
    
-    <div  className={`bg-gray-50 ${darkMode ? "dark-mode" : "light-mode"}  dark:bg-black py-4   flex items-center justify-center`}>
+    <div  className={`bg-gray-50 ${darkMode ? "dark-mode" : "light-mode"}  dark:bg-black py-4 ml-3    flex items-center justify-center`}>
     <div  className={` ml-8 ${darkMode ? 'dark-mode' : 'light-mode'} dark:hover:bg-red-600 ${darkMode ? ' hover:bg-black' : 'hover:bg-gray-100'}   transition-all duration-100 dark:bg-gray-800 border-gray-200 dark:border-gray-800 dark:text-gray-100 p-4 rounded-xl border min-w-80  max-w-80 sm:max-w-xl`}>
       <div className="flex  justify-between">
         <div className="flex   items-center">
-          <Link className="border-2 border-black rounded-full hover:border-red-500" to={"/profile/"+author._id}  ><img  className="h-11  w-11 rounded-full" src={profileImageUrl || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png' } alt="Profile"/></Link>
+          <Link className="border-2 border-black rounded-full hover:border-red-500" to={"/profile/"+author._id}  ><img  className="h-11 object-cover  w-11 rounded-full" src={profileImageUrl || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png' } alt="Profile"/></Link>
           <div className="ml-1.5 text-sm leading-tight">
             <span className={`text-black ${darkMode ? 'dark-mode' : 'light-mode'} dark:text-white font-bold block `}>{fullname}</span>
             <span className={`text-gray-500 ${darkMode ? 'dark-mode' : 'light-mode'} dark:text-gray-400 text-xs font-normal block`}>@{username}</span>
