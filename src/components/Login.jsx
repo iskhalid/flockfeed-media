@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../app/userSlice";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { formValidate } from "../utils/validate";
+import { MdArrowBackIosNew } from "react-icons/md";
+
 
 const Login = () => {
   const [isSignin, setIsSignin] = useState(true);
@@ -107,7 +109,7 @@ const Login = () => {
              {isSignin ? "Sign in to your account" : "Sign up to a new account"}
             </h1>
             <form
-              className="space-y-4 md:space-y-6"
+              className="space-y-4  md:space-y-6"
               onSubmit={(e) => {
                 e.preventDefault();
               }}
@@ -189,10 +191,15 @@ const Login = () => {
               >
                {isSignin ? "Sign in" : "Sign up"}
               </button>
+              
             </form>
           </div>
         </div>
+        <Link to={'/'}>
+        <button className="absolute top-4 sm:top-10 left-3 sm:left-10 text-xl sm:text-4xl"><MdArrowBackIosNew/></button>
+      </Link>
       </div>
+      
     </section>
   );
 };
