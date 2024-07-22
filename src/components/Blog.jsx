@@ -74,7 +74,7 @@ const Blog = () => {
 
   return (
     <>
-      <div className={`${darkMode ? 'dark-mode' : 'light-mode'} dark:bg-gray-800 flex flex-wrap  w-screen mt-8 py-10 justify-center flex-col mx-auto`}>
+      <div className={`${darkMode ? 'dark-mode' : 'light-mode'} dark:bg-gray-800 flex flex-wrap ${isUser? "":"-ml-5"} w-screen mt-8 py-10 justify-center flex-col mx-auto`}>
         {blogData && blogData.map((d) => (
           <BlogCard fetchData={fetchData} key={d._id} d={d} />
         ))}
